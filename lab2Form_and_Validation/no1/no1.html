@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            font-size: large;
+        }
+
+        table{
+            border-collapse: collapse; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        tr:nth-child(even) {
+            background: #d9f0ce
+        }
+        tr:nth-child(odd){
+            background-color: #edfbe9;
+        }
+        th{
+            border: 0.2rem solid;
+		   border-color:#90ca67;
+		   text-align:center;
+        }
+        td{
+            
+            height: 5rem;
+            border: 0.2rem solid;
+		    border-color:#90ca67;
+		    text-align:center;
+        }
+        .num{
+            width: 3rem;
+        }
+
+    </style>
+    <form>
+        <table >
+            <th></th>
+            <th >ตัวอย่างข้อมูล</th>
+            <th>Input type?</th>
+
+            <tr><td  class="num">1.</td>
+                <td>ชื่อเต็ม/ย่อของสาขาวิชา</td>
+                <td>input type="text"<br><input type="text"></td>
+            </tr>
+            <tr><td class="num">2.</td>
+                <td>จำนวนเงินที่จะโอน</td>
+                <td>input type="number"<br><input type="number"></td>
+            </tr>
+            <tr><td class="num">3.</td>
+                <td>อาหารที่ชื่อชอบ 5 ชนิดที่ชื่อชอบจากมากไปน้อย</td>
+                <td>input type="checkbox"<br>1<input type="checkbox">2<input type="checkbox">3<input type="checkbox">4<input type="checkbox">5<input type="checkbox"></td>
+            </tr>
+            <tr><td class="num">4.</td>
+                <td>ค่าไฟฟ้า 3 เดือนที่ผ่านมา</td>
+                <td>input type="number"<br>
+                    <label for="january">ค่าไฟฟ้าเดือนมกราคม:</label>
+                    <input type="number"  required><br>
+                
+                    <label for="february">ค่าไฟฟ้าเดือนกุมภาพันธ์:</label>
+                    <input type="number"  required><br>
+                
+                    <label for="march">ค่าไฟฟ้าเดือนมีนาคม:</label>
+                    <input type="number"  required><br></td>
+            </tr>
+            <tr><td class="num">5.</td>
+                <td>รหัสบัตรประชาชน</td>
+                <td>input type="text"<br><input type="text"></td>
+            </tr>
+            <tr><td class="num">6.</td>
+                <td>ความพึงพอใจของหนังสือเล่มนี้</td>
+                <td>input type="radio"<br>5<input type="radio">
+                    4<input type="radio">
+                    3<input type="radio">
+                    2<input type="radio">
+                    1<input type="radio"></td>
+            </tr>
+            <tr><td class="num">7.</td>
+                <td>อาการป่วย</td>
+                <td>input type="text"<br><input type="text"></td>
+            </tr>
+            <tr><td class="num">8.</td>
+                <td>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวันซีนหรือไม่</td>
+                <td>input type="radio"<br>เคย<input type="radio">
+                    ไม่เคย<input type="radio"></td>
+            </tr>
+            <tr><td class="num">9.</td>
+                <td>รหัสผ่าน</td>
+                <td>input type="password"<br><input type="password"></td>
+            </tr>
+            <tr><td class="num">10.</td>
+                <td>เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</td>
+                <td>input type="time"<br>เริ่ม<input type="time">
+                    สิ้นสุด<input type="time"></td>
+            </tr>
+
+            <tr><td class="num">11.</td>
+                <td>วันเวลาที่ต้องไปพบแพทย์</td>
+                <td>input type="data"<br>เริ่ม<input type="date"></td>
+            </tr>
+
+
+
+            
+
+
+            
+
+
+        </table>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin: 1;
+        padding: 0;
+
+    }
+
+    .outdiv{
+ 
+        width: 500px;
+        height: auto ;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        margin-bottom: 2%;
+        border-bottom: 2px solid black;
+        margin: 0 auto;
+        margin-top: 50px;
+        
+       
+    }
+    input{
+        width: 50%;
+        color: rgb(0, 0, 0);
+        padding: 14px 0px;
+        border:solid 2px black;
+        margin-left: 5px;
+        margin-bottom: 5px;
+
+    }
+    legend{
+        margin-left: 5px;
+    }
+    fieldset{
+            margin: 20px;
+            border-color: black;
+            margin-top: -10px;
+            
+           
+        }
+
+    .enddiv{
+        margin-right: 1em;
+        margin-top: -2px;
+        text-align: center;
+   
+    }
+    label{
+        margin-left: 5px;
+    }
+    .check{
+        width: 10px;
+    }
+    .radio{
+        width: 10px;
+    }
+    .filein{
+        border: 0;
+    }
+    button{
+        width: 2.5rem;
+        height: 2rem;
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+    <div class="outdiv"><p style="margin-left:10px ;"><p style="margin-left: 10px;"><b>แบบฟอร์มจองทัวร์</b></p>
+        <form action="form-echo.php" class="form1">
+            <div><fieldset><legend><b>ข้อมูลทั่วไป</b></legend>
+                <label><b>ชื่อ-สกุล:</b></label><br>
+                <input
+                type="text"
+                name="ชื่อ-สกุล"
+                placeholder="กรอกชื่อ-สกุล"
+                pattern="^[ก-๙]+.[ก-๙]+$"   
+                
+                required>
+                <label>*</label><br>
+
+                <label><b>Email :</b></label><br>
+                <input
+                type="email"
+                name="email"
+                placeholder=""
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                title="error"
+                required>
+                <label>*</label><br>
+
+                <label><b>โทรศัพท์:</b></label><br>
+                <input
+                type="text"
+                name="phonenumber"
+                value="+66"
+                pattern="^\d{10}$"
+                title="error"
+                required>
+                <label>*</label><br>
+
+                <label><b>ที่อยู่:</b></label><br>
+                <textarea cols="20" rows="3" name="Address"></textarea><br>
+
+
+                <label><b>รหัสไปรษณีย์:</b></label><br>
+                <input
+                type="text"
+                name="postcode"
+                placeholder=""
+                pattern="^\d{5}$"
+                title="error"
+                >
+                <label>*</label><br>
+
+                <label><b>รูปผู้จอง:</b></label><input class="filein" type="file" name="file" ><br>
+            </fieldset>
+            </div>    
+
+
+            <div ><fieldset><legend><b>ข้อมูลเข้าสู่ระบบ</b></legend>
+                <label><b>Username :</b></label><br>
+                <input
+                type="text"
+                name="username"
+                placeholder=""
+                pattern="[a-zA-Z_0-9]{8,}"
+                title="error"
+                required><br>
+                <label><i><b>ประกอบไปด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</b></i></label><br><br>
+
+                <label><b>Password :</b></label><br>
+                <input
+                type="password"
+                name="password"
+                placeholder=""
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}"
+                title="error"
+                required><br>
+                <label><i><b>ประกอบไปด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</b></i></label>
+            </fieldset>
+            </div>
+
+            <div><fieldset><legend><b>ข้อมูลทัวร์ที่ต้องการ</b></legend>
+                <label><b>แพคเก็จทัวร์ :</b></label>
+                <select name="Packet" required>
+                    <option >--select--</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Poland">Poland</option>
+                    
+                </select><br>
+                
+                <label><b>วันเดินทาง</b></label>
+                <input
+                type="date"
+                name="date"
+                required><br>
+
+                <label><b>จำนวนผู้เดินทาง :</b></label>
+                <input
+                type="text"
+                name="Tourist"
+                placeholder=""
+                pattern="[1-9]|10"
+                required> 
+                <br>
+
+                <label><b>เน้นการท่องเที่ยวแบบใด?</b></label><br>
+                <input class="check" type="checkbox" name="type1" value="ชอปปิ้ง"><b>ชอปปิ้ง</b><br>
+                <input class="check" type="checkbox" name="type2" value="ธรรมชาติ"><b>ธรรมชาติ</b><br>
+                <input class="check" type="checkbox" name="type3" value="ทะเล"><b>ทะเล</b><br>
+
+            </fieldset>
+            </div>
+            <div class="enddiv">  
+                <label><b>ยอมรับเงื่อนไขและข้อตกลง</b></label> 
+                <input class="radio" type="radio" name="agree" value="agree" checked="checked"><b>I agree</b>
+                <input class="radio" type="radio" name="agree" value="disagree"><b>I disagree</b>
+                
+                <button>จอง</button> 
+            </div> 
+        </form>
+    </div>
+
+</body>
+</html>

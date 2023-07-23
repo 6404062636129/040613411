@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td{
+            border: 0.1rem solid;
+			border-color:black;
+			text-align:center;  
+        }
+</style>
+<body>
+    <p style="font-size: 30px;"><b>เข้าสู่ระบบ</b></p>
+    <div class="container">
+        <form action="formno3.html">
+            <table style = "width:auto ; border: 0.1rem solid; font-size: 20px; font-weight: bold;" >
+                <tr><td>Username</td>
+                <td><input type="text" autofocus name="username" required pattern="[a-zA-Z_0-9]{8,}"></tr></td>
+                <tr><td>Password</td>
+                <td><input type="password" name="password" required pattern="[a-zA-Z_0-9\W]{8,}"></td></tr>
+                <tr><td colspan="2" style="text-align: left;">กรุณาพิมพ์ตามตัวเลขที่ปรากฏ : <br>
+                    1559 <br>
+                    <input type="text" name="Are you human?" required pattern="1559">
+                </td></tr>
+            
+            </table>
+
+            <br>
+            <button style="width: 5rem; height: 5rem"><img style="width: 3.5rem; height: 4.5rem;" src="https://previews.123rf.com/images/sarahdesign/sarahdesign1403/sarahdesign140300871/26699464-login-icon-or-button-login-login-button-login-icon-login-sign-icon-button-sign-sign.jpg"></button>  
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        border-color: blue;
+    
+        
+    }
+</style>
+<body>
+		
+			<form action="form-echo.php">
+                <label>1</label>
+                <input
+				type="text"
+				name="username"
+				placeholder="Username"
+                pattern="(a|e|i|o|u){3}"   
+				title="Username should only contain lowercase letters. e.g. john">
+            </form>
+		
+            <form action="form-echo.php">
+                <label>2</label>
+                <input
+				type="text"
+				name="username"
+				placeholder="Username"
+                pattern="[A-Z][a-z]+"
+				title="Username should only contain lowercase letters. e.g. john">
+            </form>
+		
+            <form action="form-echo.php">
+                <label>3</label>
+				<input
+				type="text"
+				name="username"
+				placeholder="Username"
+                pattern="(ord|order)[\d]{5}"
+				title="Username should only contain lowercase letters. e.g. john">
+
+
+			</form>
+            <form action="form-echo.php">
+                <label>4</label>
+				<input
+				type="text"
+				name="username"
+				placeholder="Username"
+                pattern="(blog|clog|frog)"
+				title="Username should only contain lowercase letters. e.g. john">
+
+
+			</form>
+		
+</body>
+</html>
