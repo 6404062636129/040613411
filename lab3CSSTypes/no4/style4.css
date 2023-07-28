@@ -1,0 +1,13 @@
+*{
+    font-size: 25px;
+}
+
+tr:hover{
+    background-color: aqua;    
+}
+td{
+    border: solid 1px;
+}
+table{
+    border: solid 1px;
+}
