@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style>
+		
+		div {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 20px;
+		}
+		nav {
+			background-color: black;
+			color: white;
+			flex: 1;
+			margin-right: 10px;
+			padding: 10px;
+			
+		}
+		li{
+			list-style-type: none;
+		}
+		main {
+			background-color: gainsboro;
+			flex: 2;
+			margin-right: 10px;
+			padding: 20px;
+		}
+		aside {
+			background-color: cornflowerblue;
+			flex: 1;
+			padding: 10px;
+		}
+		@media (max-width: 480px) {
+			div {
+				flex-direction: column;
+			}
+			main, article, aside {
+				flex: auto;
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div >
+		<nav>
+			<ul>
+				<li>Menu1</li>
+				<li>Menu2</li>
+				<li>Menu3</li>
+			</ul>
+		</nav>
+		<main>
+			<article>
+				<p>In publishing, art, and communication, … as speech, writing or any of various arts".</p>
+			</article>
+		</main>
+		<aside >
+			<section>
+				<ul>
+					<li>advertising</li>
+					<li>advertising</li>
+					<li>advertising</li>
+				</ul>
+			</section>
+		</aside>
+	</div>
+</body>
+</html>
