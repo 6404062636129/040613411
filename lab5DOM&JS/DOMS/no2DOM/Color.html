@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <script>
+        function changcolor() {
+            var name = document.getElementById("name");
+            var age = document.getElementById("age");
+            var bd = document.getElementById("birthdate");
+
+            name.style.color = "green"
+            age.style.color = "green"
+            bd.style.color = "green"
+        }
+    </script>
+    <style>
+        input[type="text"] {
+            caret-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    Name: <input type="text" id="name" onchange="changcolor()"><br>
+    Age: <input type="text" id="age" onchange="changcolor()"><br>
+    Birthdate: <input type="text" id="birthdate" onchange="changcolor()"><br>
+
+
+</body>
+
+</html>

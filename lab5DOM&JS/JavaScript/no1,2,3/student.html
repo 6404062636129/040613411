@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let student = [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใส่ใจ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            },
+            // เพิ่ม Object อื่น ๆ ต่อจากนี้
+            {
+                fullname: 'นายสมชาย มีดี',
+                age: 21,
+                year: 3,
+                gpa: 3.20,
+                help: true
+            },
+            {
+                fullname: 'นางสาวพร้อมส่ง งาน',
+                age: 19,
+                year: 2,
+                gpa: 3.70,
+                help: true
+            },
+            {
+                fullname: 'นายเรียนรู้ มาก',
+                age: 22,
+                year: 4,
+                gpa: 3.80,
+                help: false
+            },
+            {
+                fullname: 'นางสาวเขียนดี แต่เกรงใจ',
+                age: 20,
+                year: 2,
+                gpa: 2.50,
+                help: true
+            },
+            {
+                fullname: 'นายวาที พยายาม',
+                age: 21,
+                year: 3,
+                gpa: 2.70,
+                help: false
+            },
+            {
+                fullname: 'นางสาวสมพร จริงใจ',
+                age: 19,
+                year: 1,
+                gpa: 3.10,
+                help: true
+            },
+            {
+                fullname: 'นายอัจฉริยะ ศรีสุข',
+                age: 23,
+                year: 4,
+                gpa: 3.90,
+                help: true
+            },
+            {
+                fullname: 'นางสาวประสาน ความรู้',
+                age: 20,
+                year: 2,
+                gpa: 2.80,
+                help: false
+            }
+        ];
+        let bd = new Date()
+
+
+        for (let i = 0; i < student.length; i++) {
+            let gpa = student[i].gpa
+            let year = student[i].year
+            let help = student[i].help
+            let b = bd.getFullYear() + 543 - student[i].age
+
+            if ((gpa > 3.20) || (year >= 2 && gpa > 2.75 && help == true)) {
+                console.log(student[i].fullname + " เกิดเมื่อปี " + b, "ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย" + year)
+            }
+        }
+        console.log(" ")
+        console.log("สรุป")
+        console.log("ชั้นปีที่ 1")
+        for (let i = 0; i < student.length; i++) {
+            let gpa = student[i].gpa
+            let year = student[i].year
+            let help = student[i].help
+            if (gpa > 3.20 && year == 1) {
+                console.log(student[i].fullname + " เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+            }
+        } 
+
+        console.log("ชั้นปีที่ 2")
+        for (let i = 0; i < student.length; i++) {
+            let gpa = student[i].gpa
+            let year = student[i].year
+            let help = student[i].help
+            if ((gpa > 3.20 && year == 2) || (year == 2 && gpa > 2.75 && help == true)) {
+                console.log(student[i].fullname + " เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+            }
+        }
+
+        console.log("ชั้นปีที่ 3")
+        for (let i = 0; i < student.length; i++) {
+            let gpa = student[i].gpa
+            let year = student[i].year
+            let help = student[i].help
+            if ((gpa > 3.20 && year == 3) || (year == 3 && gpa > 2.75 && help == true)) {
+                console.log(student[i].fullname + " เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+            }
+        }
+
+        console.log("ชั้นปีที่ 4")
+        for (let i = 0; i < student.length; i++) {
+            let gpa = student[i].gpa
+            let year = student[i].year
+            let help = student[i].help
+            if ((gpa > 3.20 && year == 4) || (year == 4 && gpa > 2.75 && help == true)) {
+                console.log(student[i].fullname + " เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย")
+            }
+        }
+
+
+
+    </script>
+</head>
+
+
+<body>
+
+</body>
+
+</html>
