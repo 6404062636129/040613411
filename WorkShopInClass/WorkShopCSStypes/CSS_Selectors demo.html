@@ -4,14 +4,15 @@
   <title>Selectors</title>
   <meta charset="UTF-8">
   <style>
-	span[class=country]{
-		color: green;
-	}
-	h1{	
+	header > h1 > cite {
 		color: red;
 	}
-	h1{
-		color:black
+	header +p::first-letter{
+		font-size: 30px;
+	}
+	.country{
+		color:green;
+		font-weight: bold;
 	}
 	
   </style>
